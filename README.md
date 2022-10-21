@@ -3,7 +3,7 @@ Support Minecraft Veriosn: 1.18, 1.19
 Tested Minecraft Versions: 1.18.1
 
 # 插件描述
-允許玩家自動釣魚。
+允許玩家自動釣魚。  
 以此開源為基礎新增開關功能: https://github.com/WMGameLive/AutoFishing
 
 # 所有指令
