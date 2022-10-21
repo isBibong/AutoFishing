@@ -24,7 +24,9 @@ public class CommandMain implements TabExecutor {
                 return false;
             }
 
-            if (! player.hasPermission(AutoFishing.str_UsePermission())) {
+            if (! player.hasPermission(AutoFishing.str_UsePermission()) && ! player.hasPermission(
+                    AutoFishing.str_AdminPermission())) {
+
                 Messages.sendMsgToPlayer(commandSender, Messages.command_NoPermission());
                 return false;
             }
