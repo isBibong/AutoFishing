@@ -1,0 +1,8 @@
+main: pers.bibong.autofishing.AutoFishing
+name: AutoFishing
+version: ${version}
+api-version: 1.18
+commands:
+  autofishing:
+    aliases:
+      - af
