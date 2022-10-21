@@ -1,4 +1,4 @@
 # AutoFishing
-Support veriosn: 1.18up  
-Tested version: 1.18.1
+Support Minecraft Veriosn: 1.18, 1.19  
+Tested Minecraft Versions: 1.18.1
 
