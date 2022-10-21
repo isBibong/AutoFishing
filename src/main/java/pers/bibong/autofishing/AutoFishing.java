@@ -40,7 +40,9 @@ public class AutoFishing extends JavaPlugin {
         config     = new ConfigLoader();
         playerData = new PlayerDataLoader();
 
-
+        String getPrefix = config.get().getString("Prefix");
+        if (getPrefix == null) { throw new NullPointerException("請檢查 [config.yml], 找不到路徑 [Prefix]!"); }
+        prefix = getPrefix;
     }
 
     private void regCommand () {
