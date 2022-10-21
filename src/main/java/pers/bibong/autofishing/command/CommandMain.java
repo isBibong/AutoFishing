@@ -45,17 +45,14 @@ public class CommandMain implements TabExecutor {
             return true;
         }
 
-
-        switch (strings[0]) {
-            case "reload" -> {
-                if (! commandSender.hasPermission(AutoFishing.str_AdminPermission())) {
-                    Messages.sendMsgToPlayer(commandSender, Messages.command_NoPermission());
-                    return false;
-                }
-
-                AutoFishing.inst().reload();
-                Messages.sendMsgToPlayer(commandSender, Messages.command_Reload());
+        if ("reload".equals(strings[0])) {
+            if (! commandSender.hasPermission(AutoFishing.str_AdminPermission())) {
+                Messages.sendMsgToPlayer(commandSender, Messages.command_NoPermission());
+                return false;
             }
+
+            AutoFishing.inst().reload();
+            Messages.sendMsgToPlayer(commandSender, Messages.command_Reload());
         }
 
         return true;
