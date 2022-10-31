@@ -9,33 +9,28 @@ import pers.bibong.autofishing.AutoFishing;
 public class Messages {
 
     public static @NotNull String command_Reload () {
-        String prefix = AutoFishing.config.get().getString("Prefix");
         String reload = AutoFishing.config.get().getString("CommandMessage.Reload");
-        return ColorManager.color(prefix + reload);
+        return ColorManager.color(AutoFishing.getPrefix() + reload);
     }
 
     public static @NotNull String command_NoPermission () {
-        String prefix = AutoFishing.config.get().getString("Prefix");
         String reload = AutoFishing.config.get().getString("CommandMessage.NoPermission");
-        return ColorManager.color(prefix + reload);
+        return ColorManager.color(AutoFishing.getPrefix() + reload);
     }
 
     public static @NotNull String command_NotPlayer () {
-        String prefix = AutoFishing.config.get().getString("Prefix");
         String reload = AutoFishing.config.get().getString("CommandMessage.NotPlayer");
-        return ColorManager.color(prefix + reload);
+        return ColorManager.color(AutoFishing.getPrefix() + reload);
     }
 
     public static @NotNull String command_Enabled_AutoFishing () {
-        String prefix = AutoFishing.config.get().getString("Prefix");
         String reload = AutoFishing.config.get().getString("CommandMessage.Enabled_AutoFishing");
-        return ColorManager.color(prefix + reload);
+        return ColorManager.color(AutoFishing.getPrefix() + reload);
     }
 
     public static @NotNull String command_Disabled_AutoFishing () {
-        String prefix = AutoFishing.config.get().getString("Prefix");
         String reload = AutoFishing.config.get().getString("CommandMessage.Disabled_AutoFishing");
-        return ColorManager.color(prefix + reload);
+        return ColorManager.color(AutoFishing.getPrefix() + reload);
     }
 
     public static void sendMsgToConsole (@NotNull JavaPlugin plugin, String s) {
