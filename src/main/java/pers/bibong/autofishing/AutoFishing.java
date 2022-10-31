@@ -55,6 +55,10 @@ public class AutoFishing extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new Listeners(), this);
     }
 
+    public static String getPrefix () {
+        return prefix;
+    }
+
     public static AutoFishing inst () {
         return plugin;
     }
