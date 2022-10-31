@@ -8,7 +8,6 @@ import java.util.regex.Pattern;
 
 public class ColorManager {
 
-
     public static @NotNull String color (String mainString) {
         mainString = forMessageToRGB(mainString);
 
